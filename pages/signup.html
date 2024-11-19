@@ -15,21 +15,39 @@
       </div>
 
       <div class="login-container">
-        <img src="/assets/log_in.png" class="logo" alt="Login Logo" />
+        <div class="login-logo-container">
+          <img src="/assets/log_in.png" class="logo" alt="Login Logo" />
+        </div>
         <form action="">
           <div class="input-box">
-            <p>Create Username</p>
+            <p>Full Name</p>
             <input type="text" class="oval-input" required />
             <i class="bx bxs-user"></i>
           </div>
           <div class="input-box">
-            <p>Create Password</p>
+            <p>Email</p>
+            <input type="text" class="oval-input" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <p>Username</p>
+            <input type="text" class="oval-input" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <p>Password</p>
             <input type="password" class="oval-input" required />
             <i class="bx bxs-lock-alt"></i>
           </div>
 
           <!-- White, oval Login button placed below the password -->
           <button type="submit" class="login-btn">Sign Up</button>
+
+          <div class="register-link">
+            <p>
+              Already have an account? <a href="/pages/login.html">Login</a>
+            </p>
+          </div>
         </form>
         <!-- IDOL Hackathon at the bottom-right corner -->
         <p class="hackathon-credit">IDOL Hackathon 2024</p>
