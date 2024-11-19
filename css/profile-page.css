@@ -36,11 +36,14 @@ body {
 
   border-radius: 50%;
 
+  margin-left: 40px;
+
   border: 5px solid #fc7019;
 }
 
 #container #profile-container #information {
   color: #ffffff;
+  margin-left: 20px;
 }
 
 #container #profile-container #information #name {
@@ -48,6 +51,8 @@ body {
   font-weight: 700;
   margin-bottom: 0;
   padding-bottom: 0;
+
+  padding-top: 20px;
 }
 
 #container #profile-container #information #username {
@@ -68,7 +73,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
-  padding-top: 50px;
+  padding-top: 28px;
   padding-bottom: 0;
 }
 
@@ -79,7 +84,7 @@ body {
   width: 100px;
 
   margin-top: 15px;
-  margin-left: 1100px;
+  margin-left: 1050px;
 
   font-size: 25px;
   font-weight: 700;
@@ -92,6 +97,7 @@ body {
 
 #container #edit-profile-container #edit-profile {
   font-size: 35px;
+  line-height: 20px;
   padding-left: 100px;
 }
 
@@ -111,7 +117,7 @@ body {
 
   padding-left: 10px;
   padding-right: 10px;
-  margin-left: 150px;
+  margin-left: 100px;
 
   font-size: 17px;
 }
@@ -130,8 +136,8 @@ body {
   border-radius: 50px;
   width: 100px;
 
-  margin-top: 80px;
-  margin-left: 670px;
+  margin-top: 40px;
+  margin-left: 100px;
   margin-bottom: 35px;
 
   font-size: 25px;
