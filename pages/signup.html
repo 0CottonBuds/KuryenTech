@@ -15,33 +15,46 @@
       </div>
 
       <div class="login-container">
+        <p id="feedback"></p>
         <div class="login-logo-container">
           <img src="/assets/log_in.png" class="logo" alt="Login Logo" />
         </div>
-        <form action="">
+        <form action="signup-form">
           <div class="input-box">
             <p>Full Name</p>
-            <input type="text" class="oval-input" required />
+            <input id="input-name" type="text" class="oval-input" required />
             <i class="bx bxs-user"></i>
           </div>
           <div class="input-box">
             <p>Email</p>
-            <input type="text" class="oval-input" required />
+            <input id="input-email" type="text" class="oval-input" required />
             <i class="bx bxs-user"></i>
           </div>
           <div class="input-box">
             <p>Username</p>
-            <input type="text" class="oval-input" required />
+            <input
+              id="input-username"
+              type="text"
+              class="oval-input"
+              required
+            />
             <i class="bx bxs-user"></i>
           </div>
           <div class="input-box">
             <p>Password</p>
-            <input type="password" class="oval-input" required />
+            <input
+              id="input-password"
+              type="password"
+              class="oval-input"
+              required
+            />
             <i class="bx bxs-lock-alt"></i>
           </div>
 
           <!-- White, oval Login button placed below the password -->
-          <button type="submit" class="login-btn">Sign Up</button>
+          <button type="submit" class="login-btn" id="signup-button">
+            Sign Up
+          </button>
 
           <div class="register-link">
             <p>
@@ -53,5 +66,6 @@
         <p class="hackathon-credit">IDOL Hackathon 2024</p>
       </div>
     </div>
+    <script type="module" src="/scripts/sign-up.js"></script>
   </body>
 </html>
