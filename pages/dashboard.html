@@ -26,17 +26,14 @@
     </div>
 
     <div class="bargraph-container">
-      <canvas id="myChart"></canvas>
+      <canvas class="bar-chart" id="myChart"></canvas>
     </div>
 
     <div class="separate-container">
       <div class="history-container">
-        <p>History</p>
         <div class="history-buttons-container">
-          <button
-            class="getinsights-btn"
-            onclick="location.href='Page ng Tips.html'"
-          >
+          <p class="history">History</p>
+          <button class="add-btn" onclick="location.href='Page ng Tips.html'">
             Get Insights
           </button>
           <button class="add-btn" onclick="location.href='add-page.html'">
@@ -51,22 +48,16 @@
             <th>Difference</th>
           </tr>
           <div class="data-container">
-            <table id="data-table">
-              <tr>
-                <td>lorem ipsum</td>
-                <td>lorem ipsum</td>
-                <td>lorem ipsum</td>
-                <td>lorem ipsum</td>
-              </tr>
-            </table>
+            <table id="data-table"></table>
           </div>
         </table>
-      </div>
-      <div class="linegraph-container">
-        <p>Line Graph</p>
+        <div class="linegraph-container">
+          <canvas class="line-chart" id="myLineChart"></canvas>
+        </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="/scripts/dashboard.js"></script>
   </body>
 </html>

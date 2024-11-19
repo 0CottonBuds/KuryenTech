@@ -8,6 +8,7 @@ import {
   where,
   getDocs,
   updateDoc,
+  orderBy,
 } from "firebase/firestore";
 
 const firebaseConfig = {
