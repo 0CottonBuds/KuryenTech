@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KuryenTech - Edit</title>
+    <link rel="stylesheet" href="/css/addbill.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="add-container">
+      <div class="recordbill-container">
+        <br /><br />
+        <h2>Record Bills</h2>
+        <form action="recordbill">
+          <br /><br /><br /><br /><br /><br /><br />
+
+          <label>Kilowatt per Hour (kWh): </label>
+          <input type="text" id="kwh" required /><br /><br /><br />
+
+          <label>Amount: </label>
+          <input type="text" id="cost" required /><br /><br /><br />
+
+          <br /><br /><br /><br />
+
+          <div class="button-container">
+            <button
+              type="button"
+              class="back"
+              onclick="location.href='/pages/dashboard'"
+            >
+              Back
+            </button>
+            <button type="button" id="add-bill-button" class="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="graphs-container">
+        <br /><br />
+        <h2>History</h2>
+        <div class="history-container">
+          <table id="history-table">
+            <tr>
+              <th>Month</th>
+              <th>Bill</th>
+              <th>Kilowatt per Hour (kWh)</th>
+              <th>Difference</th>
+            </tr>
+            <div class="data-container">
+              <table id="data-table"></table>
+            </div>
+          </table>
+          <div class="linegraph-container">
+            <canvas class="line-chart1" id="myLineChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="/scripts/addbill.js"></script>
+  </body>
+</html>

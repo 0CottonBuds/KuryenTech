@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.recordbill-container {
+  background-color: #fc7019;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  margin-right: 125px;
+}
+
+label {
+  color: #ffffff;
+  text-align: right;
+  width: 200px;
+  display: inline-block;
+  padding: 10px;
+}
+
+input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16px;
+  top: 150px;
+}
+
+.submit {
+  width: 30%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: right;
+}
+
+.submit:hover {
+  background-color: #fc7019;
+  color: #000000;
+}
+
+.back {
+  color: rgb(0, 0, 0);
+  background-color: #fc7019;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: right;
+}
+
+.back:hover {
+  background-color: #fc7019;
+  color: #ffffff;
+}
+
+.graphs-container {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.line-chart1 {
+  height: 300px;
+  position: absolute;
+
+  top: 500px;
+}
