@@ -44,6 +44,7 @@ body {
 #container #profile-container #information {
   color: #ffffff;
   margin-left: 20px;
+  min-width: 500px;
 }
 
 #container #profile-container #information #name {
@@ -84,7 +85,7 @@ body {
   width: 100px;
 
   margin-top: 15px;
-  margin-left: 1050px;
+  margin-left: 750px;
 
   font-size: 25px;
   font-weight: 700;

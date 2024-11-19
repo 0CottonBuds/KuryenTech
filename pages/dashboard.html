@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KuryenTech - Home</title>
+
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+
+  <body>
+    <div class="header-container">
+      <div class="pfp-container">
+        <a href="(file path)" target="_blank">
+          <img src="/assets/profile-page-bg.webp" alt="Profile Picture" />
+        </a>
+      </div>
+      <div class="kuryentech-container">
+        <img src="/assets/kuryentech4.png" alt="KuryenTech Logo" />
+      </div>
+      <div class="edit-container">
+        <button class="edit-btn" onclick="location.href='edit-page.html'">
+          Edit
+        </button>
+      </div>
+    </div>
+
+    <div class="bargraph-container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="separate-container">
+      <div class="history-container">
+        <p>History</p>
+        <div class="history-buttons-container">
+          <button
+            class="getinsights-btn"
+            onclick="location.href='Page ng Tips.html'"
+          >
+            Get Insights
+          </button>
+          <button class="add-btn" onclick="location.href='add-page.html'">
+            Add Now
+          </button>
+        </div>
+        <table id="history-table">
+          <tr>
+            <th>Month</th>
+            <th>Bill</th>
+            <th>Kilowatt per Hour (kWh)</th>
+            <th>Difference</th>
+          </tr>
+          <div class="data-container">
+            <table id="data-table">
+              <tr>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+              </tr>
+            </table>
+          </div>
+        </table>
+      </div>
+      <div class="linegraph-container">
+        <p>Line Graph</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

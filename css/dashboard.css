@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    gap: 10px;
+}
+
+.pfp-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid #fc7019;
+}
+
+.kuryentech-container img {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.edit-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fc7019;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #ffffff; /* Adds hover effect */
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pfp-container img, .kuryentech-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .edit-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+.separate-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.getinsights-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fc7019;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.getinsights-btn:hover {
+    background-color: #ffffff; 
+}
+
+.add-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fc7019;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #0056b3; 
+} 
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.history-container p {
+    margin-bottom: 10px;
+}
+
+.history-buttons-container {
+    display: flex;
+    justify-content: flex-end;  /* Align buttons to the right /
+    gap: 10px;
+    margin-bottom: 10px;  / Space between buttons and table /
+}
+
+.getinsights-btn, .add-btn {
+    margin-left: 0;
+}
+
+#history-table {
+    width: 100%;
+    margin-top: 20px;  / Add space between buttons and table */
+}
+
+#history-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #fc7019;
+    color: white;
+}
+
+#history-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#history-table tr:hover {
+    background-color: #ddd;
+}

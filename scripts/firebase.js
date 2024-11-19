@@ -98,6 +98,17 @@ async function AuthUser(username, password) {
   return querySnapshot.size != 0;
 }
 
+async function getUser(username) {
+  const q = query(collection(db, "users"), where("username", "==", username));
+
+  const querySnapshot = await getDocs(q);
+  querySnapshot.forEach((doc) => {
+    console.log(doc.id, " => ", doc.data());
+  });
+
+  return querySnapshot;
+}
+
 async function getAppliancesOfUser(username) {
   const q = query(collection(doc(db, "users", username), "appliances"));
   const querySnapshot = await getDocs(q);
@@ -150,4 +161,5 @@ export {
   changeLocation,
   changeName,
   changeTargetCost,
+  getUser,
 };
