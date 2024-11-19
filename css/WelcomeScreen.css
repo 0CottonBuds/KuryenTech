@@ -1,0 +1,71 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    position: relative; 
+}
+
+h1.fade-in {
+    animation: fadeIn 2s;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 150px; /* Adjust this value to move the text lower */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    margin-top: 175px; /* Adjust this value to move the text lower */
+}
+
+
+.enter-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    opacity: 1;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    z-index: 2; 
+}
+
+.enter-btn:hover {
+    background-color: #fc7019; 
+    opacity: 0.8;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
