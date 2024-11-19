@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --color-white: #fff;
   --color-orange: #fc7019;
   --color-font: #05060e;
-  --color-transparent: #00FFFFFF
+  --color-transparent: #00ffffff;
 }
 
 * {
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--color-white);
   display: flex;
   justify-content: center;
@@ -69,10 +69,13 @@ body {
   position: relative; /* For absolute positioning of the hackathon credit */
 }
 
+.login-container .login-logo-container {
+  height: 100px;
+}
+
 .login-container .logo {
   height: 150px;
   width: 250px;
-  margin-bottom: 10px;
 }
 
 /* Oval input box styling */
@@ -83,12 +86,12 @@ body {
 
 .oval-input {
   width: 100%;
-  padding: 8px 20px;  /* Reduced vertical padding for skinnier height */
+  padding: 8px 20px; /* Reduced vertical padding for skinnier height */
   border: none;
   border-radius: 50px; /* This makes the input field oval */
   background-color: var(--color-white);
   font-size: 16px;
-  color: var(--color-white);  /* Changed text color to white */
+  color: var(--color-white); /* Changed text color to white */
   outline: none;
   transition: all 0.3s ease-in-out;
 }
@@ -99,9 +102,9 @@ body {
 
 /* Styling for "Remember me" */
 .remember-forgot {
-  font-size: 12px;  /* Same size as "Created by LinTech" */
-  color: #05060e;  /* Same font color as the credit text */
-  margin-bottom: 15px;  /* Spacing between the text and button */
+  font-size: 12px; /* Same size as "Created by LinTech" */
+  color: #05060e; /* Same font color as the credit text */
+  margin-bottom: 15px; /* Spacing between the text and button */
 }
 
 /* Make the links the same color as the text and add a hover effect */
@@ -166,4 +169,10 @@ body {
   right: 10px;
   font-size: 12px;
   color: #ffffff;
+}
+
+.register-link {
+  font-size: 12px; /* Same size as "Created by LinTech" */
+  color: #05060e;
+  margin-top: 10px;
 }
