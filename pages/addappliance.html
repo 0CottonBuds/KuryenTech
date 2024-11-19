@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KuryenTech - Edit</title>
+    <link rel="stylesheet" href="/css/addappliance.css" />
+  </head>
+  <body>
+    <div class="edit-container">
+      <div class="addappliance-container">
+        <br /><br />
+        <h2>Add Appliances</h2>
+        <form action="add-appliances">
+          <br /><br /><br /><br /><br /><br /><br />
+          <label>Name of Appliance: </label>
+          <input id="appliance" type="text" required /><br /><br /><br />
+
+          <label>Kilowatt per Hour (kWh): </label>
+          <input id="kWh" type="text" required /><br /><br /><br />
+
+          <label>Hours/Day: </label>
+          <input id="hours-per-day" type="text" required /><br /><br /><br />
+
+          <label>Days per Week: </label>
+          <input id="days-per-week" type="text" required /><br /><br /><br />
+          <br /><br /><br /><br />
+
+          <div class="button-container">
+            <button
+              type="button"
+              class="back"
+              onclick="location.href='index.html'"
+            >
+              Back
+            </button>
+            <button id="add-appliance" type="submit" class="submit">
+              Add Appliance
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="currentappliance-container">
+        <br /><br />
+        <h2>Current Appliances</h2>
+        <table id="appliances-table">
+          <tr>
+            <th>Appliances</th>
+            <th>Hours per Day</th>
+            <th>Kilowatt per Hour (kWh)</th>
+            <th>Days per Week</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="/scripts/addappliance.js"></script>
+  </body>
+</html>
