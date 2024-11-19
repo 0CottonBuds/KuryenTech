@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
-    "firebase": "^11.0.2"
+    "firebase": "^11.0.2",
+    "kuryentech-vanilla": "file:"
   }
 }

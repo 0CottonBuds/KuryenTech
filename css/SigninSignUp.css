@@ -80,6 +80,10 @@ body {
   width: 250px; /* Reduced width for a skinnier input */
 }
 
+.input-box input {
+  color: #05060e;
+}
+
 .oval-input {
   width: 100%;
   padding: 8px 20px;  /* Reduced vertical padding for skinnier height */
