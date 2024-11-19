@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/css/profile-page.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="profile-container">
+        <div id="spacer-30"></div>
+        <div id="picture">
+          <img src="/assets/profile-page-bg.webp" />
+        </div>
+
+        <div id="information">
+          <h2 id="name">User's Name</h2>
+          <h3 id="username">@username</h3>
+          <h3 id="email">useremail@gmail.com</h3>
+        </div>
+
+        <div id="button">
+          <button type="button" id="back-btn">Back</button>
+        </div>
+      </div>
+
+      <div id="edit-profile-container">
+        <div id="edit-profile">
+          <h3>Edit Profile</h3>
+        </div>
+
+        <div id="profile-info">
+          <div>
+            <input type="text" id="edit-name" placeholder="Name" />
+          </div>
+
+          <div>
+            <input type="password" id="edit-password" placeholder="Password" />
+          </div>
+
+          <div>
+            <input type="email" id="edit-email" placeholder="Email" />
+          </div>
+
+          <div>
+            <input type="text" id="edit-address" placeholder="Address" />
+          </div>
+
+          <div>
+            <input
+              type="text"
+              id="edit-target-watts"
+              placeholder="Target Watts"
+            />
+          </div>
+
+          <button type="submit" id="edit-btn">Edit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
