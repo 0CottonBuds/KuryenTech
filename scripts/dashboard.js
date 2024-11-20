@@ -58,22 +58,18 @@ bills.forEach((doc) => {
   var td1 = document.createElement("td");
   var td2 = document.createElement("td");
   var td3 = document.createElement("td");
-  var td4 = document.createElement("td");
 
   var text1 = document.createTextNode(data.date);
   var text2 = document.createTextNode(data.total_cost);
   var text3 = document.createTextNode(data.total_kwH);
-  var text4 = document.createTextNode(0);
 
   td1.appendChild(text1);
   td2.appendChild(text2);
   td3.appendChild(text3);
-  td4.appendChild(text4);
 
   tr.appendChild(td1);
   tr.appendChild(td2);
   tr.appendChild(td3);
-  tr.appendChild(td4);
 
   data_table.append(tr);
 });
@@ -85,7 +81,7 @@ new Chart(ctx1, {
     labels: dates,
     datasets: [
       {
-        label: "",
+        label: "Bill Cost every month in PHP",
         data: costs,
         borderWidth: 1,
       },

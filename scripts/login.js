@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const isAuthenticated = await AuthUser(username, password);
 
         if (isAuthenticated) {
-          alert("Login successful!");
           // Redirect or perform other actions after successful login
           window.location.href = "/pages/profile.html";
 

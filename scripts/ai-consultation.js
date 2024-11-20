@@ -38,17 +38,19 @@ export default async function generateInsights() {
 
     prompt += "Date (MM YYYY): " + data.date + ",\n";
     prompt += "total cost PHP: " + data.total_cost + ",\n";
-    prompt += "total kwh: " + data.kwH + ",\n";
+    prompt += "total kwh: " + data.total_kwH + ",\n";
     prompt += "},\n";
   });
 
   prompt += "]\n";
 
   prompt +=
-    "please tell me your insight so I could improve my energy efficiency";
+    "please tell me your insight so I could improve my energy efficiency. The electrivity is billed monthly and has a conversion rate of 1kwh to 10php (PH Peso). Can you provide information without mentioning that I have sent you a json file. maybe you could suggest how much time I need to use a specific appliance?";
+
 
   console.log("finish setting up prompt: ");
   console.log(prompt);
   const result = await model.generateContent(prompt);
-  console.log(result.response.text());
+  console.log(result.response.text().toString());
+  return result.response.text().toString();
 }
